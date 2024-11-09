@@ -29,7 +29,7 @@
   /* !important rule: overrides ALL previous styling rules for that specific property on that element */
   outline: none !important;
   border: transparent;
-  border-radius: 80px;
+  border-radius: 5px;
   background: rgb(24, 70, 80);
   box-shadow: 3px 3px 3px rgba(74, 74, 74, 0.461);
   color: rgb(255, 255, 255);
@@ -38,13 +38,79 @@
   font-size: 18px;
 }
 
+.login-btn:hover {
+  background-color: rgba(0, 0, 0, 0.831);
+}
+
+.popup {
+  /* Hide by default */
+  display: none;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.372); /* Semi-transparent background */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 60px;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content {
+  background-color: rgba(255, 255, 255, 0.755);
+  margin: 5% auto;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content h2 {
+  color: rgb(16, 103, 130);
+}
+
+.close {
+  cursor: pointer;
+  color: #aaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+#loginForm button {
+  margin: 20px;
+  border-style: hidden;
+  border-radius: 10px;
+  background-color: #527e7db9;
+  color: white;
+  padding: 5px;
+}
+
+#loginForm input {
+  margin: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 .header h1 {
   padding-top: 260px;
   padding-bottom: 0;
   font-size: 70px;
   font-family: "Arsenal SC";
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.801) !important;
+  color: rgba(255, 255, 255, 0.849) !important;
   text-shadow: none !important;
 }
 
@@ -75,7 +141,7 @@
   height: 50px;
   /* background-image: linear-gradient(#329391, #96812e); */
   background-image: radial-gradient(circle, #ffffffaa, #5ec6c4);
-  border: 0.6px solid rgb(24, 70, 80) !important;
+  border: 0.6px hidden rgb(24, 70, 80) !important;
   color: rgb(0, 0, 0) !important;
   padding: 0 25px !important;
   border-radius: 30px !important;
@@ -158,7 +224,11 @@ h1 {
 
 .gallery {
   padding: 100px 0;
-  background: #efefef;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgba(133, 136, 139, 0.577)
+  );
 }
 
 .gallery-box img {
@@ -166,6 +236,7 @@ h1 {
   /* border-radius: 10px; */
   cursor: pointer;
   transition: 1s;
+  filter: brightness(80%);
 }
 
 .gallery-box img:hover {
@@ -176,7 +247,7 @@ h1 {
   /* width: 200px; */
   display: block;
   color: #fff;
-  text-shadow: -2px 2px 2px #000;
+  text-shadow: -2px 2px 10px #000;
   /* text-align: center; */
   font-size: 20px;
   font-weight: 600;
@@ -252,6 +323,8 @@ h1 {
   /* top: 2680px; */
   margin-top: -65px;
 }
+
+/* Footer */
 
 .footer {
   /* direction?? */

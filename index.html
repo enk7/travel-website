@@ -16,6 +16,18 @@
             <div class="container">
                 <img src="new_img/travel365.png">
                 <button type="button" class="login-btn">Login</button>
+
+                <div id="loginPopup" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h2>Login</h2>
+                        <form id="loginForm">
+                            <input type="text" id="username" placeholder="username" required>
+                            <input type="text" id="password" placeholder="password" required>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <h1>Travel Across The World</h1>
             <p>Book anywhere, anytime!</p>
@@ -25,6 +37,7 @@
                     <button type="submit" class="input-group-text btn">Search</button>
                 </div>
             </div>
+            <ul id="resultList"></ul>
         </section>
         <section class="features">
             <h1>Featured Destinations</h1>
@@ -150,6 +163,58 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="new_img/travel-5.jpg">
+                            <h4>Seoul</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="new_img/travel-6.jpg">
+                            <h4>New York City</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="new_img/travel-7.jpg">
+                            <h4>San Francisco</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="new_img/travel-8.jpg">
+                            <h4>Berkeley</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="new_img/travel-9.jpg">
+                            <h4>Los Angeles</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="new_img/travel-10.jpg">
+                            <h4>Hawaii</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="new_img/travel-11.jpg">
+                            <h4>Washington D.C.</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gallery-box">
+                            <img src="new_img/travel-12.jpg">
+                            <h4>Auckland</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -158,8 +223,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8">
-                            <h2>Get 50% on top desination</h2>
-                            <p>Book your tickets before 31st March and avail 30% flat discount</p>
+                            <h2>Get 50% on Top 3 Desinations</h2>
+                            <p>Book your tickets before June 21st to be eligible for a 30% discount ANYWHERE!</p>
                         </div>
                         <div class="col-md-4">
                             <button type="button" class="booking-btn">Book Now</button>
@@ -220,18 +285,14 @@
                         <p><i class="fa fa-light fa-envelope"></i>hello@example.com</p>
                         <p><i class="fa fa-light fa-home"></i>xyz Rd, ABC City</p>
                     </div>
-                    <!-- <div class="col-md-3">
-                        <h4>Follow Us on</h4>
-                        <p><i class="fa fa-light fa-facebook"></i>Facebook</p>
-                        <p><i class="fa fa-light fa-youtube"></i>Youtube</p>
-                        <p><i class="fa fa-light fa-twitter"></i>Twitter</p>
-                    </div> -->
                 </div>
                 <!-- horizontal line -->
                 <hr>
                
             </div>
         </Section>
-
+    
+        <!-- <ul id="resultList"></ul> -->
+    <script src="script.js"></script>
     </body>
 </html>
