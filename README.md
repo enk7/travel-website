@@ -1,5 +1,6 @@
 # travel-website
 
-<img width="1438" alt="Screenshot 2024-09-11 at 10 43 10 AM" src="https://github.com/user-attachments/assets/ff031f0d-3a80-417d-993c-2e91fa6b4ae8">
+<img width="1437" alt="Screenshot 2024-11-08 at 6 27 19 PM" src="https://github.com/user-attachments/assets/8b526c59-0e69-47f8-b494-05b206829e2f">
+
 
 https://enk7.github.io/travel-website/
